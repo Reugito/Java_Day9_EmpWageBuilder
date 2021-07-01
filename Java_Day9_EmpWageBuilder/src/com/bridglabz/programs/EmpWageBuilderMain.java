@@ -4,6 +4,6 @@ public class EmpWageBuilderMain {
 
 	public static void main(String[] args) {
 		EmpWageBuilder empWageBuilder = new EmpWageBuilder();
-		empWageBuilder.getMonthlyWage();;
+		empWageBuilder.getMonthlyWageWhileCondition();
 	}
 }

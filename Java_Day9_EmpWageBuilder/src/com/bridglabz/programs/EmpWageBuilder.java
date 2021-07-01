@@ -48,6 +48,23 @@ public class EmpWageBuilder {
 		}
 		System.out.println("Employee Monthly wager = "+totalWage);
 	}
+	
+	public void getMonthlyWageWhileCondition() {
+		
+		int totalWage = 0, wage = 0, workingHr = 0;
+		while( day < 20 && workingHr <= 100  ) {
+			wage = usingSwitch();
+			if(wage / WagePerHr == FullDayHr) {
+				totalWage += wage;
+				workingHr += FullDayHr;
+			}
+			else if(wage / WagePerHr == PartThimeHr) {
+				totalWage += wage;
+				workingHr += PartThimeHr;
+			}
+		}
+		System.out.println("Employee Monthly wager = "+totalWage);
+	}
 }
 
 
