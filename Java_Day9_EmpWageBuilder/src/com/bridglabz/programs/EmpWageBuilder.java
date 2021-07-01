@@ -16,4 +16,9 @@ public class EmpWageBuilder {
 		int daily_wage = WagePerHr * FullDayHr; 
 		return daily_wage;
 	}
+	
+	public static int getPartTimeWage() {             // adding part time wager
+    	int partTimeWage = WagePerHr * PartThimeHr; 
+        return partTimeWage;
+    }
 }
