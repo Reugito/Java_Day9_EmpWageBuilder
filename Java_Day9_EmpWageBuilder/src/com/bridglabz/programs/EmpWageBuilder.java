@@ -39,6 +39,15 @@ public class EmpWageBuilder {
 		return 0;
 		}
 	}
+	
+	public static void getMonthlyWage() {
+		
+		int totalWage = 0;
+		for(day = 1; day <= 20; day++) {
+			totalWage += usingSwitch();
+		}
+		System.out.println("Employee Monthly wager = "+totalWage);
+	}
 }
 
 
