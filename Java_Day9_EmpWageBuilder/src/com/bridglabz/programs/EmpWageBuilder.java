@@ -22,3 +22,5 @@ public class EmpWageBuilder {
         return partTimeWage;
     }
 }
+
+

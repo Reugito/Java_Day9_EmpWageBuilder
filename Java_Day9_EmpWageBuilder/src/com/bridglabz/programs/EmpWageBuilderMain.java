@@ -6,5 +6,4 @@ public class EmpWageBuilderMain {
 		EmpWageBuilder empWageBuilder = new EmpWageBuilder();
 		empWageBuilder.getPartTimeWage();
 	}
-
 }
