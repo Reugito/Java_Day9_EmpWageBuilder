@@ -68,9 +68,9 @@ public class EmpWageBuilder {
 		System.out.println("Employee Monthly wager = "+totalWage);
 	}
 	
-public void getMonthlyWageCompny(int WagePerHr, String name, int totalWorkingHr, int totalDays ) {
+	public void getMonthlyWageCompny(int WagePerHr, String name, int totalWorkingHr, int totalDays ) {
 		
-	EmpWageBuilder.WagePerHr = WagePerHr;
+		EmpWageBuilder.WagePerHr = WagePerHr;
 		System.out.println(WagePerHr+" "+FullDayHr+" "+ PartThimeHr );
 		int totalWage = 0, wage = 0, workingHr = 0;
 		while( day < totalDays && workingHr <= totalWorkingHr  ) {
