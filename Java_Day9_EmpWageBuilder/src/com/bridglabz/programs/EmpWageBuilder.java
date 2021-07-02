@@ -3,7 +3,9 @@ package com.bridglabz.programs;
 import java.util.Random;
 
 public class EmpWageBuilder {
-	public static final int WagePerHr = 20, FullDayHr = 8, PartThimeHr = 4;
+	public static int WagePerHr = 20;
+	public static final int FullDayHr = 8;
+	public static final int PartThimeHr = 4;
 	public static final int isFulltime = 1, isParttime = 2;
 	public static int day = 0;
 	
@@ -64,6 +66,25 @@ public class EmpWageBuilder {
 			}
 		}
 		System.out.println("Employee Monthly wager = "+totalWage);
+	}
+	
+public void getMonthlyWageCompny(int WagePerHr, String name, int totalWorkingHr, int totalDays ) {
+		
+	EmpWageBuilder.WagePerHr = WagePerHr;
+		System.out.println(WagePerHr+" "+FullDayHr+" "+ PartThimeHr );
+		int totalWage = 0, wage = 0, workingHr = 0;
+		while( day < totalDays && workingHr <= totalWorkingHr  ) {
+			wage = usingSwitch();
+			if(wage / WagePerHr == FullDayHr) {
+				totalWage += wage;
+				workingHr += FullDayHr;
+			}
+			else if(wage / WagePerHr == PartThimeHr) {
+				totalWage += wage;
+				workingHr += PartThimeHr;
+			}
+		}
+		System.out.println("Monthly wager in"+name+" = "+totalWage);
 	}
 }
 
